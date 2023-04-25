@@ -33,10 +33,10 @@ export class App extends Component {
       <>
         <Router>
           <Navbar toggleMode={this.toggleMode} mode={this.state.mode}/>
-          {/* <LoadingBar
+          <LoadingBar
             color='#f11946'
             progress={this.state.progress}
-          /> */}
+          />
           <Switch>
             <Route exact path="/"><Newscomponent setProgress={this.setProgress} mode={this.state.mode} key="general" category={"general"} /></Route>
             <Route exact path="/business"><Newscomponent setProgress={this.setProgress} mode={this.state.mode} key="business" category={"business"} /></Route>
